@@ -57,11 +57,30 @@
             </li>
           </ul>
         </address>
+        
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-burger"></use>
+
+        </svg>
+
+      </button>
+      
+      
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-clouse" data-menu-close>Clouse</button>
+          <nav class="mobile-menu-nav">Navigation</nav> 
+          <address>Address</address>
+           <div>Soc linc</div>
+
+        </div>
       </div>
     </header>
     <main>
       <!-- Services for business -->
-      <section class="business-section">
+      <section class="business-section hidden">
         <div class="container page-hero">
           <h1 class="section-heading">Effective Solutions for Your Business</h1>
           <button class="action-button" type="button" data-modal-open>
@@ -71,7 +90,7 @@
       </section>
 
       <!-- Key values -->
-      <section class="values-section">
+      <section class="values-section hidden">
         <div class="container page-about">
           <h2 class="visually-hidden">Our Key Values</h2>
 
@@ -130,7 +149,7 @@
       </section>
 
       <!-- Section Team -->
-      <section class="team-section">
+      <section class="team-section hidden">
         <div class="container">
           <h2 class="team-section-heading">Our Team</h2>
 
@@ -312,7 +331,7 @@
 
       <!-- Section Our Portfolio -->
 
-      <section class="portfolio-section">
+      <section class="portfolio-section hidden">
         <div class="container">
           <h2 class="portfolio-section-heading">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -437,7 +456,7 @@
 
     <!-- footer -->
 
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container page-footer">
         <div class="footer-content">
           <a class="logo footer-logo" href="./index.html"
@@ -513,7 +532,7 @@
 </footer>
 
     <!-- Modal -->
-    <div class="modal-overlay" data-modal>
+    <div class="modal-overlay hidden" data-modal>
       <div class="modal">
           <button type="button" class="modal-closed" data-modal-close>
               <svg width="8" height="8" class="icon-close">
@@ -572,6 +591,8 @@
 
     <!-- Script js -->
  <script src="./js/modal.js"></script>
+ <script src="./js/menu.js"></script>
+
     <!-- end Script js -->
 
   </body>
